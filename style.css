@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico|Montserrat:wght@700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico%7CMontserrat:wght@700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 
 *{
     padding: 0;
@@ -7,12 +8,16 @@
 }
 
 :root{
-    --tenne-tawny: #d65108;
-    --tenne-tawny-dark: #b54507;
-    --love-color: #d25380;
-    --heart-color: #d15f98; 
+    --tenne-tawny: #D65108;
+    --tenne-tawny-dark: #B54507;
+    --love-color: #D25380;
+    --heart-color: #FF69B4;
 }
-
+h1 {
+    text-align: center;
+    margin-top: 50px
+  }
+  
 body{
     font-weight: 300;
     font-size: 1.05rem;
@@ -210,7 +215,7 @@ body{
     width: 10px;
 }
 .meal-details::-webkit-scrollbar-thumb{
-    background: #f0f0f0;
+    background: #F0F0F0;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -342,48 +347,58 @@ body{
     #meal{
         grid-template-columns: repeat(3, 1fr);
     }
-}
-img {
-    width: 200px;
-    height: 100px;
+} 
+
+.wrapper {
+    display: flex;
+    justify-content: center;
   }
- *{
-  font-family: 'Montserrat';
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
- }
- html, body {
-    display: grid;
-    place-items:center;
-    width: 100%;
-    height: 100%;
+  
+  .icons {
+    display: flex;
+    justify-content: center;
   }
-.button{
-  display:inline-block;
-  width: 60px;
-  background-color: #fff;
-  border-radius: 50px;
-  line-height: 60px;
-  text-align: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-}
-.wrapper .button .icon{
-  font-size: 20px;
-}
-.wrapper .button .hover {
-  width: 100px;
-  transition: 0.7s;
-}
-.wrapper .button:nth-child(1):hover .icon {
-  color: #426782;
-}
-.wrapper .button:nth-child(2):hover .icon {
-  color: #1da1f2;
-}
-.wrapper .button:nth-child(3):hover .icon {
-  color: #800080;
-}
-.wrapper .button:nth-child(4):hover .icon {
-  color: #E1306c;
-}
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #7C9070;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(66, 109, 75, 0.5);
+  }
+  
+  .icon i {
+    color: white;
+    font-size: 24px;
+ 
+  }
+  
+  .icon {
+    text-decoration: none;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 180px; /* set the height of the container */
+  }
+  
+  .logo-container img {
+    width: 50%; /* adjust the size of the logo */
+    max: width at 200px; ; /* set a maximum width */
+  }
+  
+
+  .social-media-icons {
+    margin-top: -20px; /* adjust the value to move the icons up or down */
+  }
+  
