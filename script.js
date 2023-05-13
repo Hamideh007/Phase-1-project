@@ -74,3 +74,7 @@ function mealRecipeModal(meal){
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+const searchButton = document.querySelector('#search-button');
+const searchResults = document.querySelector('#search-results');
+
+
